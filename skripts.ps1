@@ -88,8 +88,8 @@ if ($PercentFree -le 70) {
     $laczna = ($volume.SizeRemaining / 1073741824)
 
     $messageSplat = @{
-        BotToken    = "1731764451:AAFGqp46PBasBYKSFWQGOIUlv_RRtjhCu7s"
-        ChatID      = "-575742317"
+        BotToken    = "nnnnnnnnn:xxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        ChatID      = "-nnnnnnnnn"
         Message     = "[LOW SPACE] Drive at: $percentFree% lacznie zostalo $laczna GB "
         ErrorAction = 'Stop'
     }
@@ -105,6 +105,8 @@ if ($PercentFree -le 70) {
     }
 
 }
+
+#$botToken = 'nnnnnnnnn:xxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxx'                                                             $chat = '-nnnnnnnnn'              
 
 
 
