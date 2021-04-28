@@ -85,12 +85,12 @@ if ($PercentFree -le 70) {
     
     Add-Content -Path $logFile -Value "[INFO] Sending telegram notification"
 
-    $laczna = ($volume.SizeRemaining / 1073741824)
+    $freesize = ($volume.SizeRemaining / 1073741824)
 
     $messageSplat = @{
         BotToken    = "nnnnnnnnn:xxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxx"
         ChatID      = "-nnnnnnnnn"
-        Message     = "[LOW SPACE] Drive at: $percentFree% lacznie zostalo $laczna GB "
+        Message     = "[LOW SPACE] Drive at: $percentFree% FREE SIZE $freesize GB "
         ErrorAction = 'Stop'
     }
 
